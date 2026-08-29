@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<!-- 
+  MY PORTFOLIO WEBSITE
+  made by me lol
+  TODO: change the video link later
+  TODO: add more projects
+-->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- background layers -->
+<div id="bg-static"></div>
+<video id="bg-video" autoplay muted loop>
+  <source src="3.mp4" type="video/mp4">
+</video>
+<div id="bg-overlay"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MyPortfolio</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="bgSwitchBtn" onclick="toggleBackground()">Switch to Video BG</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Hi, I'm John Doe</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- PFP ISLE -->
+<section class="pfp-section">
+  <h2>Pick my pfp</h2>
+  
+  <img id="mainPfp" src="https://i.pravatar.cc/300?img=12" alt="main profile pic">
+  
+  <!-- this is my "pfp isle" haha, click one and it becomes the big pic -->
+  <div class="pfp-isle">
+    <img class="pfp-thumb selected" src="https://i.pravatar.cc/300?img=12" onclick="changePfp(this)">
+    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=5" onclick="changePfp(this)">
+    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=8" onclick="changePfp(this)">
+    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=15" onclick="changePfp(this)">
+    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=20" onclick="changePfp(this)">
+    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=33" onclick="changePfp(this)">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio 
+    vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat 
+    ante. In vulputate metus in odio vulputate, non luctus felis pretium. Sed 
+    tincidunt turpis eu est vehicula, vitae congue nulla porttitor.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi.</p>
+    </div>
+    
+    <div class="project-card">
+      <h3>Project Three</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 John Doe. all rights reserved i guess</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
