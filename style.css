@@ -6,7 +6,6 @@
 }
 
 html {
-    min-height: 100vh;
     background-image: url("Assets/Background.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,6 +14,11 @@ html {
 }
 
 body {
+    background-image: url("Assets/Background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
