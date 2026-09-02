@@ -5,12 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-    background-image: url('../Assets/Background.gif');
+html {
+    background-image: url("C:/Users/cyrus/Documents/Yuuki-Portfolio-main/Assets/Background.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+body {
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
