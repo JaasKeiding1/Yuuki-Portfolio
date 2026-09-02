@@ -6,6 +6,7 @@
 }
 
 html {
+    min-height: 100vh;
     background-image: url("...Assets/Background.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
