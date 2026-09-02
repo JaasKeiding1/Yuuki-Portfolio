@@ -1,113 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Portfolio</title>
-
-<!-- 
-  MY PORTFOLIO WEBSITE
-  made by me lol
-  TODO: change the video link later
-  TODO: add more projects
--->
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- background layers -->
-<div id="bg-static"></div>
-<video id="bg-video" autoplay muted loop>
-  <source src="3.mp4" type="video/mp4">
-</video>
-<div id="bg-overlay"></div>
-
-<!-- NAVBAR -->
-<nav>
-  <h2>MyPortfolio</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button id="bgSwitchBtn" onclick="toggleBackground()">Switch to Video BG</button>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <h1>Hi, I'm John Doe</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</section>
-
-<!-- PFP ISLE -->
-<section class="pfp-section">
-  <h2>Pick my pfp</h2>
   
-  <img id="mainPfp" src="https://i.pravatar.cc/300?img=12" alt="main profile pic">
-  
-  <!-- this is my "pfp isle" haha, click one and it becomes the big pic -->
-  <div class="pfp-isle">
-    <img class="pfp-thumb selected" src="https://i.pravatar.cc/300?img=12" onclick="changePfp(this)">
-    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=5" onclick="changePfp(this)">
-    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=8" onclick="changePfp(this)">
-    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=15" onclick="changePfp(this)">
-    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=20" onclick="changePfp(this)">
-    <img class="pfp-thumb" src="https://i.pravatar.cc/300?img=33" onclick="changePfp(this)">
+  <!-- ---------- Headers / Navigation ---------- -->
+
+
+  <header>
+
+    <h1>Yuki Hiigata</h1>
+
+    <nav>
+
+        <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+               <a href="#contact">Contact</a>
+
+    </nav>
+  </header>
+
+
+  <!-- ---------- Headers / Navigation ---------- -->
+
+
+
+
+  <!-- ---------- Introductions ---------- -->
+
+
+  <section id="hero">
+
+    <h2>Hi, I'm Yuki!</h2>
+
+      <p>I'm a freshman studying Computer Science.</p>
+
+  </section>
+
+
+  <!-- ---------- Introductions ---------- -->
+
+
+
+  <!-- ---------- About_Me ---------- -->
+
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+      <p>I just started my CS degree.</p>
+
+  </section>
+
+
+  <!-- ---------- About_Me ---------- -->
+
+
+
+  <!-- ---------- Profile_Picture ----------- -->
+
+
+    <div class="profile">
+
+      <h3>Yuuki</h3>
+
+    </div>
+
+
+  <!-- ---------- Profile_Picture ----------- -->
+
+
+
+  <!-- ---------- [SECTION_PROJECTS] ---------- -->
+
+
+  <section id="projects">
+
+    <h2>My Projects</h2>
+
+
+  <!-- ---------- [SECTION_PROJECTS] ---------- -->
+
+
+
+  <!-- ----------- CALCULATOR ----------- -->
+
+
+    <div class="project-box">
+
+      <h3>Calculator</h3>
+        <p>A small Python program that calculates.</p>
+
+    </div>
+
+
+  <!-- ----------- CALCULATOR ----------- -->
+
+
+
+  <!-- ---------- NAS ---------- -->
+
+
+    <div class="project-box">
+
+      <h3>NAS</h3>
+       <p>Network Attached Server acting as a simple database of all my projects and repos.</p>
+
+    </div>
+
+
+  <!-- ---------- NAS ---------- -->
+
+
+
+  <!-- ---------- WEBSITE ---------- -->
+
+
+    <div class="project-box">
+
+      <h3>This very website itself
+       <p>Website as a portfolio of all my skills and projects.</p>
+
+    </div>
+  </section>
+
+
+  <!-- ---------- WEBSITE ---------- -->
+  <!-- |           Void              -->
+  <!-- |           Void              -->
+  <!-- |           Void              -->
+  <!-- ---------- Skills ----------  -->
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+      <ul>
+
+          <li>Python</li>
+          <li>Git and GitHub</li>
+          <li>Linux basics</li>
+          <li>HTML and CSS</li>
+          <li>Learning: Networking, Java, UI/UX</li>
+
+      </ul>
+  </section>
+
+
+  <!-- ---------- Skills ---------- -->
+
+
+
+  <!-- ----------contact---------- -->
+
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+    <p>Email: deletedsuuki@gmail.com</p>
+    <p>
+
+      <a href="#">GitHub</a> 
+      <a href="https://www.youtube.com/@deletedSuuki">YouTube</a> 
+      <a href="https://steamcommunity.com/id/Tyuukii/">Steam</a>
+
+    </p>
+
+  </section>
+
+
+  <!-- ----------contact---------- -->
+
+
+
+  <!-- -----------button for fun---------- -->
+
+
+  <div class="button">
+
+      <Button>Click me</Button>
+
   </div>
-</section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <h2>About Me</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio 
-    vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat 
-    ante. In vulputate metus in odio vulputate, non luctus felis pretium. Sed 
-    tincidunt turpis eu est vehicula, vitae congue nulla porttitor.
-  </p>
-</section>
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    
-    <div class="project-card">
-      <h3>Project One</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-    </div>
-    
-    <div class="project-card">
-      <h3>Project Two</h3>
-      <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi.</p>
-    </div>
-    
-    <div class="project-card">
-      <h3>Project Three</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-    </div>
-    
-  </div>
-</section>
+  <!-- -----------button_for_fun---------- -->
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <form onsubmit="submitForm(event)">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
 
-<footer>
-  <p>&copy; 2026 John Doe. all rights reserved i guess</p>
-</footer>
 
-<script src="script.js"></script>
+  <!-- -----------Footer---------- -->
+
+
+  <footer>
+    <p> Made by Yuki | Testing the Footer </p>
+  </footer>
+
+
+  <!-- -----------Footer---------- -->
 
 </body>
 </html>
